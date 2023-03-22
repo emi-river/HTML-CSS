@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butikssäljare, Göteborg</title>
+    <meta
+      name="description"
+      content="Vi söker nu en butikssäljare till vår butik i Göteborg. Mer information om tjänsten kan du hitta här!"
+    />
+    <link rel="stylesheet" href="Annons.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="header">
+        <img
+          id="logga"
+          src="logo60.png"
+          srcset="logo100.png 100w, logo60.png 60w"
+          sizes="(max-width: 600px) 60px, 100px"
+          alt="Emi ABs logga"
+        />
+        <div class="meny">
+          <a class="menylänkar" href="#" target="_top">Om oss</a>
+          <a class="menylänkar" href="#" target="_top">Butiker</a>
+          <a class="menylänkar" href="index.html" target="_top"
+            >Jobba hos oss</a
+          >
+          <a class="menylänkar" href="#" target="_top">Kontakt</a>
+        </div>
+      </header>
+
+      <div class="sida">
+        <h1>Butikssäljare, Göteborg</h1>
+        <p id="kontraktstyp">Deltid, 50%</p>
+        <h2 class="rubrik">Om tjänsten</h2>
+        <p id="om">
+          Tjänsten börjar med en 6 månders provanställning på 20h/v och går
+          sedan över till en tillvidareanställning. Arbetstiderna är vardagar
+          och helger. Arbetsuppgifterna kommer främst vara kassahantering och
+          uppackning/påfyllning av varor i butik. Du kommer vara ansiktet utåt
+          till våra kunder, därav ser vi helst till att anställa någon som är
+          positiv och energisk.
+        </p>
+
+        <div id="arbetet">
+          <div class="krav">
+            <h2 class="rubrik">Vad vi söker</h2>
+            <ul id="sökerLista">
+              <li>Måste ha fyllt 18 år</li>
+              <li>Tidigare erfarenhet är meriterande</li>
+              <li>Serviceinriktad</li>
+              <li>Kan börja omgående</li>
+            </ul>
+          </div>
+
+          <div class="krav">
+            <h2 class="rubrik">Vad vi erbjuder</h2>
+            <ul id="erbjuderLista">
+              <li>God arbetsmiljö</li>
+              <li>Möjligheten att utvecklas och växa i företaget</li>
+              <li>Kollektivavtal</li>
+              <li>Tävlingar och aktiviteter inom företaget</li>
+              <li>Personalrabatt</li>
+            </ul>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Ansök nu</legend>
+          <form action="https://www.example.com/" method="post">
+            <aside>* = Obligatoriskt</aside>
+
+            <div id="formulär">
+              <label class="ansökan">
+                Förnamn
+                <input class="inmatning" name="Förnamn" type="text" />
+              </label>
+
+              <label class="ansökan">
+                Efternamn
+                <input class="inmatning" name="Efternamn" type="text" />
+              </label>
+
+              <label class="ansökan">
+                Telefon
+                <input class="inmatning" name="Telefon" type="tel" />
+              </label>
+
+              <label class="ansökan">
+                E-post
+                <input class="inmatning" name="E-post" type="email" />
+              </label>
+            </div>
+
+            <label class="ansökan">
+              * CV
+              <input
+                class="inmatning"
+                name="CV"
+                type="file"
+                accept=".doc, .pdf"
+                required
+              />
+            </label>
+
+            <label class="ansökan">
+              * Personligt Brev
+              <input
+                class="inmatning"
+                name="PersonligtBrev"
+                type="file"
+                required
+              />
+            </label>
+
+            <label>
+              <input type="checkbox" required />
+              Jag godkänner Emi ABs
+              <a href="#" target="_blank">integritetspolicy</a>
+              och personuppgiftshantering.
+            </label>
+            <div id="skicka">
+              <input type="submit" value="Skicka" />
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer>© 2022 Emi AB</footer>
+  </body>
+</html>

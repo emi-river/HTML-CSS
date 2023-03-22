@@ -1,0 +1,209 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url(JosefinSans-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: JosefinSans;
+  margin: 0%;
+}
+
+.header {
+  background-color: #fdf7f6;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding-top: 0.2em;
+  padding-bottom: 0.7em;
+  border-bottom: double;
+}
+
+#logga {
+  margin-right: 1em;
+  padding-left: 0.5em;
+}
+
+.meny a {
+  font-size: 110%;
+  margin: 0.5em;
+  white-space: nowrap;
+}
+
+.menylänkar {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sida,
+body {
+  min-height: 100vh;
+}
+
+.sida {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+#kontraktstyp {
+  margin-top: 0%;
+  text-align: center;
+}
+
+.rubrik {
+  font-size: 110%;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+}
+
+#om {
+  background-color: #fcf3f0;
+  padding: 1em;
+  margin-top: 0.5em;
+  border: solid;
+  border-width: 0.1em;
+  border-radius: 0.35em;
+}
+
+#arbetet {
+  display: table;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-spacing: 0.4em;
+}
+
+.krav {
+  background-color: #fcf3f0;
+  display: table-cell;
+  padding: 0.5em;
+  margin: 0%;
+  border: solid;
+  border-width: 0.1em;
+  border-radius: 0.35em;
+}
+
+li {
+  list-style: circle;
+  font-size: 95%;
+  margin-top: 0.5em;
+}
+
+fieldset {
+  border-color: black;
+  border-radius: 0.35em;
+  border-width: 0.1em;
+  border-style: solid;
+  width: auto;
+}
+
+legend {
+  font-size: x-large;
+}
+
+.ansökan {
+  font-size: 130%;
+}
+
+.inmatning {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#skicka {
+  display: grid;
+  grid-template-columns: 5em;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 2em;
+}
+/* ---------------------------- */
+@media (max-width: 410px) {
+  #arbetet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .krav {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 94%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+  }
+  #sökerLista {
+    padding: 0 1em;
+    margin: 0;
+  }
+  #erbjuderLista {
+    padding: 0 1em;
+    margin: 0;
+  }
+}
+
+/* ---------------------------- */
+@media (min-width: 460px) {
+  .meny a {
+    font-size: 120%;
+    margin: 0.5em;
+  }
+
+  .sida {
+    text-align: center;
+    margin: auto;
+  }
+
+  #kontraktstyp {
+    margin-bottom: 3em;
+  }
+
+  h4 {
+    font-size: 125%;
+  }
+
+  #om {
+    padding: 1em 0.5em;
+    margin: 0.5em;
+  }
+
+  ul,
+  li {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .krav {
+    font-size: 110%;
+    width: 50%;
+  }
+
+  fieldset {
+    text-align: left;
+    width: fit-content;
+    align-self: center;
+  }
+
+  #formulär {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 0.5em;
+  }
+}

@@ -1,0 +1,145 @@
+@font-face {
+  font-family: JosefinSans;
+  src: url(JosefinSans-Regular.ttf) format("truetype");
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: JosefinSans;
+  margin: 0%;
+}
+
+.header {
+  background-color: #fdf7f6;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding-top: 0.2em;
+  padding-bottom: 0.7em;
+  border-bottom: double;
+}
+
+#logga {
+  padding-left: 0.5em;
+  margin-right: 1em;
+}
+
+.meny a {
+  font-size: 110%;
+  margin: 0.5em;
+  white-space: nowrap;
+}
+
+.menylänkar {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sida,
+body {
+  min-height: 100vh;
+}
+
+.sida {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  padding: 0%;
+  margin-top: 0%;
+}
+
+li {
+  background-color: #fcf3f0;
+  background-image: linear-gradient(to right, white, #fcf3f0, white);
+  list-style: none;
+  padding: 2rem;
+  padding-bottom: 0.5em;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: inherit;
+}
+
+li:hover {
+  border-left: dotted;
+  border-right: dotted;
+}
+
+.annonser {
+  font-size: larger;
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+}
+
+fieldset {
+  background-color: #fcf3f0;
+  font-size: large;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.35em;
+}
+
+legend {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+#skicka {
+  display: grid;
+  grid-template-columns: 5em;
+  justify-content: center;
+}
+
+/* ---------------------------- */
+@media (min-width: 600px) {
+  .meny a {
+    font-size: 120%;
+    margin: 0.5em;
+  }
+
+  .sida {
+    text-align: center;
+    margin: auto;
+  }
+
+  ul {
+    margin: 0 auto;
+  }
+
+  li {
+    padding: 1em 5em;
+    margin-bottom: 1em;
+  }
+
+  li:hover {
+    border-left: dotted;
+    border-right: dotted;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, white, #f2f2f2, white);
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  fieldset {
+    margin: 0% 1em;
+  }
+}

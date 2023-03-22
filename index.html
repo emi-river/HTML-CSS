@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobba hos oss</title>
+    <meta
+      name="description"
+      content="Här kan du hitta all information om våra lediga tjänster. Se vilka lediga tjänster som finns hos Emi AB"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <header class="header">
+        <img
+          id="logga"
+          srcset="logo100.png 100w, logo60.png 60w"
+          sizes="(max-width: 600px) 60px, 100px"
+          src="logo60.png"
+          alt="Emi ABs logga"
+        />
+        <div class="meny">
+          <a class="menylänkar" href="#" target="_top">Om oss</a>
+          <a class="menylänkar" href="#" target="_top">Butiker</a>
+          <a class="menylänkar" href="index.html" target="_top"
+            >Jobba hos oss</a
+          >
+          <a class="menylänkar" href="#" target="_top">Kontakt</a>
+        </div>
+      </header>
+
+      <div class="sida">
+        <h1>Jobba hos oss!</h1>
+        <h2>Lediga tjänster</h2>
+        <ul>
+          <li>
+            <a class="annonser" href="Annons.html" target="_top"
+              >Butikssäljare, Göteborg</a
+            >
+            <p>Deltid, 50%</p>
+          </li>
+          <li>
+            <a class="annonser" href="#">Butikschef, Stockholm</a>
+            <p>Heltid</p>
+          </li>
+        </ul>
+
+        <fieldset>
+          <legend>Prenumerera!</legend>
+          <p>
+            Vill du bli informerad när vi har en ny ledig tjänst? Registrera din
+            mejl nedan och håll dig uppdaterad!
+          </p>
+          <form action="https://www.example.com/" method="post">
+            <label>
+              E-post:
+              <input
+                name="mejl"
+                placeholder="Exempel@epost.com"
+                type="email"
+                required
+              />
+            </label>
+            <div>
+              <label>
+                <input type="checkbox" required />
+                Jag godkänner Emi ABs
+                <a href="#" target="_blank">integritetspolicy.</a>
+              </label>
+            </div>
+            <div id="skicka">
+              <input type="submit" value="Prenumerera!" />
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer>© 2022 Emi AB</footer>
+  </body>
+</html>
